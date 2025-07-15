@@ -1,4 +1,4 @@
-# Usar a imagem base do .NET SDK
+# Usar a imagem base do .NET SDK para build
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
@@ -11,7 +11,7 @@ RUN dotnet restore
 # Compilar o projeto
 RUN dotnet publish -c Release -o out
 
-# Usar a imagem base do .NET Runtime
+# Usar a imagem base do .NET Runtime para execução
 FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
 

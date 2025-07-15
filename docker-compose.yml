@@ -1,4 +1,4 @@
-version: '3.8'
+
 
 services:
   taskmanagerapi:
@@ -9,7 +9,7 @@ services:
       - "8080:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Server=mysql;Database=TaskManagerDb;User=taskmanager;Password=taskmanager123;
+      - ConnectionStrings__DefaultConnection=Server=mysql;Port=3306;Database=TaskManagerDb;User=taskmanager;Password=taskmanager123;;
     depends_on:
       - mysql
 
