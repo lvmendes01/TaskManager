@@ -112,3 +112,25 @@ O banco de dados será inicializado automaticamente ao iniciar o container.
 
 ---
   
+
+
+
+ --- sessão dedicada
+
+
+ perguntaria para o PO visando o refinamento para futuras implementações ou melhorias?
+ ## Perguntas para o PO
+ - Quais são as prioridades para as próximas sprints?
+ - Há alguma funcionalidade específica que você gostaria de ver implementada na API?
+ - Existe algum feedback dos usuários que devemos considerar para melhorias?
+ - Há planos para integrar a API com outras ferramentas ou serviços no futuro?
+
+	
+Na terceira fase, escreva no arquivo README.md em uma sessão dedicada o que você melhoraria no projeto, identificando possíveis pontos de melhoria, implementação de padrões, visão do projeto sobre arquitetura/cloud, etc.
+
+- ## Melhorias no Projeto
+- Implementação de Padrões
+  - Adotar padrões de design como Repository e Unit of Work para melhor separação de preocupações.
+  - Implementar injeção de dependência para facilitar testes e manutenção. *não implementado falta de tempo, mais algo que gosto bastante*
+  - Utilizar DTOs (Data Transfer Objects) para transferir dados entre camadas, melhorando a segurança e a performance. 
+  - Implementar autenticação e autorização usando JWT (JSON Web Tokens) para proteger endpoints sensíveis. *Teve um endpoint que foi solicitado apenas para o gerente, porem como nao foi solicitado autentificação, não foi possivel essa funcionalidade*
